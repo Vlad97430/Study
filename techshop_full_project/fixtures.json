@@ -1,0 +1,160 @@
+[
+  {
+    "model": "shop.category",
+    "pk": 1,
+    "fields": {
+      "name": "Електроніка",
+      "description": "Смартфони, планшети, ноутбуки",
+      "created_at": "2025-08-26T22:00:00"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 2,
+    "fields": {
+      "name": "Сантехніка",
+      "description": "Всі види сантехнічного обладнання",
+      "created_at": "2025-08-26T22:00:00"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "name": "Смартфон X",
+      "description": "Новий флагманський смартфон",
+      "price": "15000.00",
+      "stock": 20,
+      "available": true,
+      "created_at": "2025-08-26T22:00:00",
+      "updated_at": "2025-08-26T22:00:00"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "name": "Ноутбук Y",
+      "description": "Ультрабук для роботи та навчання",
+      "price": "25000.00",
+      "stock": 10,
+      "available": true,
+      "created_at": "2025-08-26T22:00:00",
+      "updated_at": "2025-08-26T22:00:00"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 3,
+    "fields": {
+      "category": 1,
+      "name": "Планшет Z",
+      "description": "Планшет з великим екраном",
+      "price": "12000.00",
+      "stock": 15,
+      "available": true,
+      "created_at": "2025-08-26T22:00:00",
+      "updated_at": "2025-08-26T22:00:00"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 4,
+    "fields": {
+      "category": 2,
+      "name": "Унітаз A",
+      "description": "Сучасний економний унітаз",
+      "price": "5000.00",
+      "stock": 8,
+      "available": true,
+      "created_at": "2025-08-26T22:00:00",
+      "updated_at": "2025-08-26T22:00:00"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 5,
+    "fields": {
+      "category": 2,
+      "name": "Ванна B",
+      "description": "Ванна акрилова з гідромасажем",
+      "price": "15000.00",
+      "stock": 5,
+      "available": true,
+      "created_at": "2025-08-26T22:00:00",
+      "updated_at": "2025-08-26T22:00:00"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 6,
+    "fields": {
+      "category": 2,
+      "name": "Змішувач C",
+      "description": "Кухонний змішувач з термостатом",
+      "price": "2000.00",
+      "stock": 12,
+      "available": true,
+      "created_at": "2025-08-26T22:00:00",
+      "updated_at": "2025-08-26T22:00:00"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 7,
+    "fields": {
+      "category": 1,
+      "name": "Навушники D",
+      "description": "Бездротові навушники з шумопоглинанням",
+      "price": "3000.00",
+      "stock": 25,
+      "available": true,
+      "created_at": "2025-08-26T22:00:00",
+      "updated_at": "2025-08-26T22:00:00"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 8,
+    "fields": {
+      "category": 1,
+      "name": "Камера E",
+      "description": "Цифрова камера для зйомки 4K",
+      "price": "10000.00",
+      "stock": 7,
+      "available": true,
+      "created_at": "2025-08-26T22:00:00",
+      "updated_at": "2025-08-26T22:00:00"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 9,
+    "fields": {
+      "category": 2,
+      "name": "Раковина F",
+      "description": "Мийка з нержавіючої сталі",
+      "price": "3000.00",
+      "stock": 10,
+      "available": true,
+      "created_at": "2025-08-26T22:00:00",
+      "updated_at": "2025-08-26T22:00:00"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 10,
+    "fields": {
+      "category": 2,
+      "name": "Туалетний папір G",
+      "description": "Набір з 12 рулонів",
+      "price": "150.00",
+      "stock": 50,
+      "available": true,
+      "created_at": "2025-08-26T22:00:00",
+      "updated_at": "2025-08-26T22:00:00"
+    }
+  }
+]
