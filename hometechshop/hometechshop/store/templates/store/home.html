@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ title }}</h1>
+<p>Ласкаво просимо! Оберіть розділ:</p>
+<ul>
+  {% for link in links %}
+    <li><a href="{% url link.url %}">{{ link.label }}</a></li>
+  {% endfor %}
+</ul>
+<div class="card">
+  <p>На сайті представлено сучасну побутову техніку: холодильники, пральні машини, пилососи, чайники та інше.</p>
+</div>
+{% endblock %}

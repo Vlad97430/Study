@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin:0; padding:0; background:#fafafa; color:#222;}
+    header, footer { background:#0f172a; color:#fff; padding:16px 24px;}
+    a { color:#0f766e; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .container { max-width:980px; margin:0 auto; padding:24px; }
+    .card { background:#fff; border-radius:12px; padding:16px 20px; box-shadow:0 1px 3px rgba(0,0,0,.08); margin-bottom:16px; }
+    .btn { display:inline-block; padding:8px 12px; border-radius:8px; background:#0ea5e9; color:#fff; }
+    .btn:hover { background:#0284c7; }
+    nav a { margin-right:12px; }
+    .muted { color:#555; }
+    table { width:100%; border-collapse:collapse; }
+    th, td { padding:8px 10px; border-bottom:1px solid #eee; text-align:left; }
+    .pill { padding:2px 8px; border-radius:999px; background:#eef2ff; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <strong>Магазин техніки для дому</strong>
+    <nav style="float:right">
+      <a href="{% url 'home' %}">Головна</a>
+      <a href="{% url 'products' %}">Товари</a>
+      <a href="{% url 'categories' %}">Категорії</a>
+      <a href="{% url 'about' %}">Про магазин</a>
+      <a href="{% url 'contacts' %}">Контакти</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  {% block content %}{% endblock %}
+  {% if back_home %}
+    <p><a class="btn" href="{% url 'home' %}">⬅ На головну</a></p>
+  {% endif %}
+</main>
+<footer>
+  <div class="container muted">&copy; {{ now|default:None }} Магазин техніки для дому</div>
+</footer>
+</body>
+</html>

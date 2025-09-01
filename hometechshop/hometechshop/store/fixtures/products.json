@@ -1,0 +1,242 @@
+[
+  {
+    "model": "store.category",
+    "pk": 1,
+    "fields": {
+      "name": "Холодильники",
+      "slug": "kholodylnyky",
+      "description": "Окремостоячі та вбудовані холодильники",
+      "is_active": true
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 2,
+    "fields": {
+      "name": "Пральні машини",
+      "slug": "pralni-mashyny",
+      "description": "Фронтальні та вертикальні",
+      "is_active": true
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 3,
+    "fields": {
+      "name": "Пилососи",
+      "slug": "pylososy",
+      "description": "Мішкові, безмішкові, робот-пилососи",
+      "is_active": true
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 4,
+    "fields": {
+      "name": "Електрочайники",
+      "slug": "elektrochajnyky",
+      "description": "Скляні та металеві",
+      "is_active": true
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 1,
+    "fields": {
+      "name": "Холодильник Side-by-Side 500",
+      "slug": "holodilnyk-sbs-500",
+      "category": 1,
+      "brand": "LG",
+      "description": "Холодильник Side-by-Side 500 від LG. Якісна побутова техніка.",
+      "price": "35999.0",
+      "discount_percent": 10,
+      "stock": 10,
+      "is_active": true,
+      "warranty_months": 12,
+      "energy_class": "A+",
+      "color": "silver",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 2,
+    "fields": {
+      "name": "Холодильник Комбі 300",
+      "slug": "holodilnyk-combi-300",
+      "category": 1,
+      "brand": "Samsung",
+      "description": "Холодильник Комбі 300 від Samsung. Якісна побутова техніка.",
+      "price": "28999.0",
+      "discount_percent": 5,
+      "stock": 10,
+      "is_active": true,
+      "warranty_months": 12,
+      "energy_class": "A++",
+      "color": "black",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 3,
+    "fields": {
+      "name": "Пральна машина 7кг EcoWash",
+      "slug": "pralna-7kg-ecowash",
+      "category": 2,
+      "brand": "Bosch",
+      "description": "Пральна машина 7кг EcoWash від Bosch. Якісна побутова техніка.",
+      "price": "19999.0",
+      "discount_percent": 15,
+      "stock": 10,
+      "is_active": true,
+      "warranty_months": 12,
+      "energy_class": "A+++",
+      "color": "white",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 4,
+    "fields": {
+      "name": "Пральна машина 9кг Turbo",
+      "slug": "pralna-9kg-turbo",
+      "category": 2,
+      "brand": "Whirlpool",
+      "description": "Пральна машина 9кг Turbo від Whirlpool. Якісна побутова техніка.",
+      "price": "23999.0",
+      "discount_percent": 0,
+      "stock": 10,
+      "is_active": true,
+      "warranty_months": 12,
+      "energy_class": "A++",
+      "color": "white",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 5,
+    "fields": {
+      "name": "Робот-пилосос SmartClean",
+      "slug": "robot-pylosos-smartclean",
+      "category": 3,
+      "brand": "Xiaomi",
+      "description": "Робот-пилосос SmartClean від Xiaomi. Якісна побутова техніка.",
+      "price": "12999.0",
+      "discount_percent": 20,
+      "stock": 10,
+      "is_active": true,
+      "warranty_months": 12,
+      "energy_class": "A+",
+      "color": "black",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 6,
+    "fields": {
+      "name": "Пилосос циклонний PowerVac",
+      "slug": "pylosos-powervac",
+      "category": 3,
+      "brand": "Philips",
+      "description": "Пилосос циклонний PowerVac від Philips. Якісна побутова техніка.",
+      "price": "6999.0",
+      "discount_percent": 5,
+      "stock": 10,
+      "is_active": true,
+      "warranty_months": 12,
+      "energy_class": "A",
+      "color": "red",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 7,
+    "fields": {
+      "name": "Електрочайник Glass 1.7L",
+      "slug": "elektrochajnyk-glass-17",
+      "category": 4,
+      "brand": "Tefal",
+      "description": "Електрочайник Glass 1.7L від Tefal. Якісна побутова техніка.",
+      "price": "1999.0",
+      "discount_percent": 0,
+      "stock": 10,
+      "is_active": true,
+      "warranty_months": 12,
+      "energy_class": "B",
+      "color": "silver",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 8,
+    "fields": {
+      "name": "Електрочайник Steel 1.5L",
+      "slug": "elektrochajnyk-steel-15",
+      "category": 4,
+      "brand": "Bosch",
+      "description": "Електрочайник Steel 1.5L від Bosch. Якісна побутова техніка.",
+      "price": "1799.0",
+      "discount_percent": 10,
+      "stock": 10,
+      "is_active": true,
+      "warranty_months": 12,
+      "energy_class": "B",
+      "color": "gray",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 9,
+    "fields": {
+      "name": "Холодильник Міні 120",
+      "slug": "holodilnyk-mini-120",
+      "category": 1,
+      "brand": "Hansa",
+      "description": "Холодильник Міні 120 від Hansa. Якісна побутова техніка.",
+      "price": "9999.0",
+      "discount_percent": 0,
+      "stock": 10,
+      "is_active": true,
+      "warranty_months": 12,
+      "energy_class": "A+",
+      "color": "white",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 10,
+    "fields": {
+      "name": "Ручний пилосос MiniBrush",
+      "slug": "ruchnyj-pylosos-minibrush",
+      "category": 3,
+      "brand": "Dyson",
+      "description": "Ручний пилосос MiniBrush від Dyson. Якісна побутова техніка.",
+      "price": "8999.0",
+      "discount_percent": 25,
+      "stock": 10,
+      "is_active": true,
+      "warranty_months": 12,
+      "energy_class": "A+",
+      "color": "silver",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  }
+]

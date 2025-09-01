@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ title }}</h1>
+<div class="card">
+  {% if categories %}
+  <ul>
+    {% for c in categories %}
+      <li><span class="pill">{{ c.name }}</span> — {{ c.description|default:'Без опису' }}</li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <em>Категорій поки немає.</em>
+  {% endif %}
+</div>
+{% endblock %}

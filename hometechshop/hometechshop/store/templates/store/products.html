@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ title }}</h1>
+<div class="card">
+  {% if products %}
+  <table>
+    <thead>
+      <tr>
+        <th>Назва</th>
+        <th>Бренд</th>
+        <th>Категорія</th>
+        <th>Ціна, ₴</th>
+        <th>Знижка</th>
+        <th>Кінцева ціна</th>
+        <th>Колір</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for p in products %}
+      <tr>
+        <td>{{ p.name }}</td>
+        <td>{{ p.brand }}</td>
+        <td>{{ p.category.name }}</td>
+        <td>{{ p.price }}</td>
+        <td>{{ p.discount_percent }}%</td>
+        <td>{{ p.final_price }}</td>
+        <td>{{ p.get_color_display }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+    <em>Товарів поки немає.</em>
+  {% endif %}
+</div>
+{% endblock %}
